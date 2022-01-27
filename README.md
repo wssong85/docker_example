@@ -50,12 +50,14 @@
 # 도커 생성
 
 > 베이스 이미지 명시
+
 `FROM baseImage` 
 
 - 추가적 필요한 파일 다운로드
 - <이미지이름>:<태그> 형식으로 작성
 - 태그를 안붙이면 자동적으로 최신 다운로드
 - ex) ubuntu:14.04
+
 `RUN command`
 
 > 컨테이너 시작 시 실행 될 명령어 명시
@@ -115,10 +117,4 @@
 > 실시간 docker 실행
 
 `docker run -it -p 3000:3000 -v /usr/src/app/node_modules -v E:\workspace\docker\docker\docker-react-app:/usr/src/app tabliser/docker-react`
-
-
-docker-fullstack-mysql.czu5krkxiseh.ap-northeast-2.rds.amazonaws.com
-
-3306
-
 
